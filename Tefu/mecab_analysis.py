@@ -18,8 +18,4 @@ for line in lines :
             words.append(info[6])
 
 cnt = Counter(words)
-set = []
-
-for w in cnt.items() :
-    set.append(cnt)
-
+print(cnt.most_common)
