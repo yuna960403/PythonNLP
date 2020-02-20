@@ -29,3 +29,5 @@ text = re.sub("\u3000", "", text)
 word = len(text)
 
 print(line, word)
+# line = 1140
+# word = 96340
