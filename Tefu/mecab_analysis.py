@@ -27,7 +27,7 @@ for w in cnt.most_common() :
     num += 1
     set[num] = w
 
-with open("data.csv", "w") as file :
+with open("result.csv", "w") as file :
     writer = csv.writer(file)
     writer.writerows(set)
 
