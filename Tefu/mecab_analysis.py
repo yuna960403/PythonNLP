@@ -1,5 +1,7 @@
 import MeCab
 import wc
+import csv
+
 from collections import Counter
 
 text = wc.text
@@ -18,4 +20,15 @@ for line in lines :
             words.append(info[6])
 
 cnt = Counter(words)
-print(cnt.most_common)
+set = [0] * 4380
+num = -1
+
+for w in cnt.most_common() :
+    num += 1
+    set[num] = w
+
+with open("data.csv", "w") as file :
+    writer = csv.writer(file)
+    writer.writerows(set)
+
+file.close()
