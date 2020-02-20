@@ -1,11 +1,4 @@
-# Janomeのインストール
-# pip install janome | tail -n 1
-# ターミナルで実行
-
-# Janomeのロード
-from janome.tokenizer import Tokenizer
-
-path = "data/kusamakura.txt"
+path = "/Users/tefu/Git/PythonNLP/data/kusamakura.txt"
 with open(path) as text :
     text = text.read()
 
