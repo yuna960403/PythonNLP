@@ -5,7 +5,7 @@ import re
 from collections import Counter
 
 # ファイル読み込み
-with open('/Users/sakura/git/PythonNLP/Yuna/kusamakura.txt') as f:
+with open('/Users/sakura/git/PythonNLP/data/kusamakura.txt') as f:
     text = f.read()
 
 # パース
@@ -24,3 +24,6 @@ words = [item[0]
 counter = Counter(words)
 for word, count in counter.most_common():
     print(f"{word}: {count}")
+
+
+#余分な単語が出力されるので改善すること！！
